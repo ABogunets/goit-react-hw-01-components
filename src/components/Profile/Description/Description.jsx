@@ -8,7 +8,7 @@ export const Description = ({ username, tag, location, avatar }) => {
     <DescriptionWrapper>
         <Avatar src={avatar} alt='User avatar' />
         <Name>{username}</Name>
-        <Tag>{tag}</Tag>
+        <Tag>@{tag}</Tag>
         <Location>{location}</Location>
     </DescriptionWrapper>
   )

@@ -5,15 +5,15 @@ export const Stats = ({stats}) => {
   return (
     <StatsWrapper>
       <StatsItem>
-        <Label>"Followers"</Label>
+        <Label>Followers</Label>
         <Quantity>{stats.followers}</Quantity>
       </StatsItem>
       <StatsItem>
-        <Label>"Views"</Label>
+        <Label>Views</Label>
         <Quantity>{stats.views}</Quantity>
       </StatsItem>
       <StatsItem>
-        <Label>"Likes"</Label>
+        <Label>Likes</Label>
       <Quantity>{stats.likes}</Quantity>
       </StatsItem>
     </StatsWrapper>
