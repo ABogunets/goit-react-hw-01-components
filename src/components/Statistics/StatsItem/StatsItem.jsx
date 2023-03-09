@@ -5,7 +5,7 @@ export const StatsItem = ({ label, percentage, statsItemColor}) => {
   return (
     <StatsItemWrapper itemColor={statsItemColor}>
         <Label>{label}</Label>
-        <Percentage>{percentage}</Percentage>
+        <Percentage>{percentage}%</Percentage>
     </StatsItemWrapper>
   )
 }
@@ -14,4 +14,5 @@ export const StatsItem = ({ label, percentage, statsItemColor}) => {
 StatsItem.propTypes = {
   label: PropTypes.string.isRequired,
   percentage: PropTypes.number.isRequired,
+  statsItemColor: PropTypes.string.isRequired,
 };

@@ -20,11 +20,9 @@ export const StatsList = ({ stats }) => {
 }
 
 StatsList.propTypes = {
-  statsData: PropTypes.arrayOf(
-    PropTypes.exact({
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
       id: PropTypes.string.isRequired,
-      label: PropTypes.string.isRequired,
-      percentage: PropTypes.number.isRequired,
       }),
     ),
 };

@@ -1,13 +1,9 @@
 import styled from 'styled-components';
 
 export const StatsItemWrapper = styled.li`
-  outline: 1px solid tomato;
-  width: 50px;
-  padding: 10px 20px;
-  /* &:not(:last-child) {
-    border-right: 2px solid gainsboro;
-    }; */
-    background-color: ${p => p.itemColor};
+  flex-basis: calc(100% / 5);
+  padding: 10px 0px;
+  background-color: ${p => p.itemColor};
 
 `;
 
