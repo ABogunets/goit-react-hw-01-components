@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const TransactionListItemWrapper = styled.tr`
+export const Container = styled.tr`
   color: darkgrey;
   font-size: 12px;
   &:nth-child(2n) {
@@ -16,4 +16,10 @@ export const ListItem = styled.td`
   }
   border: 2px solid gainsboro;
 
+`;
+
+export const StatsList = styled.ul`
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 15px;
 `;

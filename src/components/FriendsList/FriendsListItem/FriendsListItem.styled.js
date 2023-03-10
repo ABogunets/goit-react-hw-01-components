@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const FriendsListItemWrapper = styled.li`
+export const Container = styled.li`
   display: flex;
   align-items: center;
   &:not(:last-child) {

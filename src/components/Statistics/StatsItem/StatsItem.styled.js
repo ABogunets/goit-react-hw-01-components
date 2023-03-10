@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const StatsItemWrapper = styled.li`
+export const Container = styled.li`
   flex-basis: calc(100% / 5);
   padding: 10px 0px;
   background-color: ${p => p.itemColor};

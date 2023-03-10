@@ -1,13 +1,35 @@
-import data from 'backendData/data.json';
-import { Container} from 'components/Statistics/Statistics.styled';
-import { StatsTitle } from 'components/Statistics/StatsTitle/StatsTitle'
-import { StatsList } from 'components/Statistics/StatsList/StatsList'
+import PropTypes from 'prop-types';
+import { StatsItem } from 'components/Statistics/StatsItem/StatsItem'
 
-export const Statistics = () => {
+import { Container, StatsTitle, StatsList} from 'components/Statistics/Statistics.styled';
+import { getRandomHexColor } from 'utils/getColor';
+
+export const Statistics = ({title, stats}) => {
   return (
     <Container>
-      <StatsTitle title='Upload stats' />
-      <StatsList stats={data} />
+      {title && <StatsTitle>{title}</StatsTitle >}
+      <StatsList>
+        {stats.map(({ id, label, percentage }) => (
+          <StatsItem
+            key={id}
+            label={label}
+            percentage={percentage}
+            statsItemColor={getRandomHexColor()}
+            />
+      ))}
+      </StatsList>
     </Container>
   );
 };
+
+Statistics.propTypes = {
+  title: PropTypes.string,
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      }),
+    ),
+};
+
+
+

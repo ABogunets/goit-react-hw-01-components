@@ -1,13 +1,13 @@
 import PropTypes from 'prop-types';
-import {FriendsListItemWrapper, Avatar, Name, Status} from 'components/FriendsList/FriendsListItem/FriendsListItem.styled';
+import {Container, Avatar, Name, Status} from 'components/FriendsList/FriendsListItem/FriendsListItem.styled';
 
 export const FriendsListItem = ({avatar, name, isOnline}) => {
   return (
-    <FriendsListItemWrapper>
+    <Container>
       <Status isOnline={isOnline}/>
       <Avatar src={avatar} alt='User avatar' />
       <Name>{name}</Name>
-    </FriendsListItemWrapper>
+    </Container>
   )
 }
 

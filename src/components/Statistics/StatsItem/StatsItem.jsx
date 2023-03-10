@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
-import {StatsItemWrapper, Label, Percentage} from 'components/Statistics/StatsItem/StatsItem.styled';
+import {Container, Label, Percentage} from 'components/Statistics/StatsItem/StatsItem.styled';
 
 export const StatsItem = ({ label, percentage, statsItemColor}) => {
   return (
-    <StatsItemWrapper itemColor={statsItemColor}>
+    <Container itemColor={statsItemColor}>
         <Label>{label}</Label>
         <Percentage>{percentage}%</Percentage>
-    </StatsItemWrapper>
+    </Container>
   )
 }
 

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const FriendsListWrapper = styled.ul`
+export const Container = styled.ul`
   width: 300px;
   margin-top: 20px;
   margin-left: auto;
